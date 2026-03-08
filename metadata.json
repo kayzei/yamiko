@@ -1,0 +1,7 @@
+{
+  "name": "Yamiko Fashions",
+  "description": "A luxury boutique e-commerce platform for fashion, beauty, and hair, optimized for the Zambian market.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

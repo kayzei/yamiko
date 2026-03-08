@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  --color-gold: #D4AF37;
+  --color-pink-primary: #FF4FA3;
+  --color-pink-soft: #FFD1DC;
+  --color-dark: #2C2C2C;
+  --color-bg-soft: #FFF5F7;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-soft text-dark font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.btn-gold {
+  @apply bg-gold text-white px-6 py-2 rounded-full hover:bg-gold/90 transition-all font-medium;
+}
+
+.btn-pink {
+  @apply bg-pink-primary text-white px-6 py-2 rounded-full hover:bg-pink-primary/90 transition-all font-medium;
+}
